@@ -65,6 +65,9 @@ from ansible_collections.cisco.iosxr.plugins.module_utils.network.iosxr.facts.os
 from ansible_collections.cisco.iosxr.plugins.module_utils.network.iosxr.facts.ospf_interfaces.ospf_interfaces import (
     Ospf_interfacesFacts,
 )
+from ansible_collections.cisco.iosxr.plugins.module_utils.network.iosxr.facts.interface1.interface1 import (
+    Interface1Facts,
+)
 
 
 FACT_LEGACY_SUBSETS = dict(
@@ -85,6 +88,7 @@ FACT_RESOURCE_SUBSETS = dict(
     ospfv2=Ospfv2Facts,
     ospfv3=Ospfv3Facts,
     ospf_interfaces=Ospf_interfacesFacts,
+    interface1=Interface1Facts
 )
 
 
